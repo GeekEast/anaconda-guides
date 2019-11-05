@@ -9,7 +9,7 @@
   - [Create an env in current foler](#create-an-env-in-current-foler)
   - [Activate current folder's env](#activate-current-folders-env)
   - [Export current folder's env as yml file](#export-current-folders-env-as-yml-file)
-- [Install, Update, Remove and List Packages](#install-update-remove-and-list-packages)
+  - [Install, Update, Remove and List Packages](#install-update-remove-and-list-packages)
   - [Deactivate current folder's env](#deactivate-current-folders-env)
   - [Config env from `yml file`](#config-env-from-yml-file)
   - [Baby Usage](#baby-usage)
@@ -61,7 +61,7 @@ conda activate ./conda-env
 conda env export > environment.yml
 ```
 
-### Install, Update, Remove and List Packages
+#### Install, Update, Remove and List Packages
 ```sh
 conda install pandas
 conda install --channel conda-forge <package_name> # from sepcific channel
