@@ -1,0 +1,4 @@
+name: /Users/xiangt/Desktop/anaconda-python-starter/conda-env
+channels:
+  - defaults
+prefix: /Users/xiangt/Desktop/anaconda-python-starter/conda-env
