@@ -82,12 +82,29 @@ conda env create -f environment.yml
 
 
 #### Baby Usage
+- create native python
 ```sh
 conda create --name conda-env python
 conda create --name conda-env python=3.7
 conda create --name conda-env python=3.7 numpy requests
-conda activate conda-env
-conda deactivate
+```
+- create anaconda env
+```sh
+# create an env called conda-env based on anaconda and python3.7
+conda create --name conda-env anaconda python=3.7
+# list all conda envs
 conda env list
+# activate conda-env env
+conda activate conda-env
+# install pandas in current env
+conda install pandas
+# update pandas in current env
+conda update pandas
+# remove pandas in current env
+conda remove pandas
+# list all packages in current env
+conda list
+# quit current env
+conda deactivate
 ```
 
