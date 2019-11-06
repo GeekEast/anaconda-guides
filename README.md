@@ -144,6 +144,14 @@ c.NotebookApp.token = '' # don't require
 nohup jupyter notebook
 ```
 
+### Examples
+#### Install spacy in conda-env
+```sh
+conda activate ./conda-env
+pip install spacy # sometimes use pip
+python -m spacy download en
+```
+
 ### References
 - [5 Minute Jupyter Notebook Server](https://lerner.co.il/2017/02/01/five-minute-guide-setting-jupyter-notebook-server/)
 - [How to Install, Run, and Connect to Jupyter Notebook on a Remote Server](https://www.digitalocean.com/community/tutorials/how-to-install-run-connect-to-jupyter-notebook-on-remote-server)
