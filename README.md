@@ -143,3 +143,7 @@ c.NotebookApp.token = '' # don't require
 ```sh
 nohup jupyter notebook
 ```
+
+### References
+- [5 Minute Jupyter Notebook Server](https://lerner.co.il/2017/02/01/five-minute-guide-setting-jupyter-notebook-server/)
+- [How to Install, Run, and Connect to Jupyter Notebook on a Remote Server](https://www.digitalocean.com/community/tutorials/how-to-install-run-connect-to-jupyter-notebook-on-remote-server)
