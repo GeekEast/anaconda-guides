@@ -6,6 +6,7 @@
 - [Install Anaconda on Mac](#install-anaconda-on-mac)
 - [Conda](#conda)
   - [Env Shorthand Config](#env-shorthand-config)
+  - [Set no base env by default](#set-no-base-env-by-default)
   - [Create an env in current foler](#create-an-env-in-current-foler)
   - [Activate current folder's env](#activate-current-folders-env)
   - [Export current folder's env as yml file](#export-current-folders-env-as-yml-file)
@@ -13,6 +14,11 @@
   - [Deactivate current folder's env](#deactivate-current-folders-env)
   - [Config env from `yml file`](#config-env-from-yml-file)
   - [Baby Usage](#baby-usage)
+- [Anaconda](#anaconda)
+- [Create Remote Jupyter Notebook on Server](#create-remote-jupyter-notebook-on-server)
+  - [Generate config](#generate-config)
+  - [Modify config](#modify-config)
+  - [Launch and enjoy](#launch-and-enjoy)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -117,4 +123,23 @@ conda deactivate
 - Add `jupyter notebook` to path in Ubuntu
 ```sh
 export PATH=~/anaconda3/bin:$PATH
+```
+
+### Create Remote Jupyter Notebook on Server
+#### Generate config
+```sh
+jupyter notebook --generate-config
+nano ~/.jupyter/jupyter_notebook_config.py
+```
+#### Modify config
+```python
+# more than below
+c.NotebookApp.open_browser = False
+c.NotebookApp.ip = '0.0.0.0'
+c.NotebookApp.password = '<Your_Password>'
+c.NotebookApp.token = '' # don't require
+```
+#### Launch and enjoy
+```sh
+nohup jupyter notebook
 ```
