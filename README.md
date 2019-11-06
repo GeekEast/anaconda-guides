@@ -43,6 +43,11 @@ bash <64-Bit Command Line Installer>
 conda config --set env_prompt '({name})'
 ```
 
+#### Set no base env by default
+```sh
+conda config --set auto_activate_base False
+```
+
 #### Create an env in current foler
 ```sh
 conda create -p ./conda-env anaconda # create anaconda  env
