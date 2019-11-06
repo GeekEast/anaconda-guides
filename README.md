@@ -113,3 +113,8 @@ conda list
 conda deactivate
 ```
 
+### Anaconda
+- Add `jupyter notebook` to path in Ubuntu
+```sh
+export PATH=~/anaconda3/bin:$PATH
+```
